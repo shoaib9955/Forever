@@ -1,0 +1,15 @@
+# Common
+node_modules
+.DS_Store
+*.log
+.env
+.env.local
+
+# Frontend / Admin
+dist
+dist-ssr
+.vscode
+.idea
+
+# Backend
+uploads
