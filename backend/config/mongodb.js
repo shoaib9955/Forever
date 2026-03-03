@@ -6,7 +6,11 @@ const connectDB = async () => {
         console.log("DB Connected");
     })
 
-    await mongoose.connect(`${process.env.MONGODB_URI}shoaibcommerce`)
+    try {
+        await mongoose.connect(`${process.env.MONGODB_URI}shoaibcommerce`)
+    } catch (error) {
+        console.error("MongoDB Connection Error:", error);
+    }
 
 }
 
